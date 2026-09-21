@@ -8,6 +8,7 @@ updates:
     rebase-strategy: "disabled"
 
   # docker dependencies
+    open-pull-requests-limit: 0
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
@@ -15,8 +16,10 @@ updates:
     rebase-strategy: "disabled"
 
   # github dependencies
+    open-pull-requests-limit: 0
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
     rebase-strategy: "disabled"
+    open-pull-requests-limit: 0
